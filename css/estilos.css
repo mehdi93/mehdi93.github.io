@@ -1,0 +1,413 @@
+/* Estilos generales*/
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #3f3f3f;
+    font-size: 20px;
+    line-height: 1.5em;
+
+}
+.contenedor{
+    margin: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+}
+
+p{
+     line-height: 1.5em;
+    padding: 20px 10px;
+
+}
+a{
+    text-decoration: none;
+    color: #282828;
+}
+a:hover{
+    color:burlywood; /*Colores corporativo*/
+}
+a.activo{
+    color: burlywood;
+}
+img{
+    max-width: 100%;
+}
+.boton{
+    margin: 20px;
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: darkgreen
+}
+
+
+
+
+@keyframes intermitente{
+    0% {opacity:0;}
+    50%{opacity:1;}
+    100%{opacity:0;}
+}
+ .fila{
+  
+    margin:40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* col1 col2 col3 */
+
+.col1{
+    /* padding: 10px; */
+    flex-basis: 300px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col2{
+    /* border:solid 1px grey; */
+    padding: 10px;
+    flex-basis: 300px;
+    flex-grow: 3;
+}
+.col3{
+    margin: 40px;
+}
+
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie{
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
+/*Cabecera barra de navegación*/
+header{
+    
+    margin: 10px;
+    background-color: #666666ab;
+    padding: 40px;
+     display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+    box-shadow:  0px 4px 4px grey;
+}
+   
+
+header nav ul{
+    list-style: none;
+    display: flex;     
+}
+header nav ul li{
+      padding: 0 15px;
+      font-family: 'Pacifico', cursive;
+      display: flex;
+      justify-content: flex-end;      
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: burlywood;
+}
+nav ul li a{
+    color: white;
+}
+nav ul li a.activo{
+    color: burlywood;
+}
+ .logo{
+    color: white;
+    font-size: 54px;
+}
+.burger{
+   display: none;
+}
+
+/*hero*/
+
+.hero{
+    margin: 10px;
+    height: 100vh;
+    background-image: url('../img/351234-1-1972973-1476570104.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.hero h1{
+    background-color: #00688293;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+}
+.hero h2{
+    margin: 10px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.hero .miniform input{
+    font-size: 15px;
+}
+
+/* seccion */
+.seccion{
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+   
+}
+.seccion a{
+    padding: 30px;
+    color:white;
+background-color: #00688293;
+}
+
+
+/* inscribete a nuestra newsletter */
+.miniform{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.miniform p{
+    font-family: 'Pacifico', cursive;
+    color: black;
+    font-size: 28px;
+}
+.miniform input{
+    border: 2px solid blue;
+    color: black;
+    font-size:24px;
+    padding: 10px;
+}
+input:focus{
+    outline: none;
+}
+
+.miniform .boton{  
+    background-color: blue;
+    color:white;
+    font-size: 24px;
+    padding: 10px;  } 
+   
+.boton:hover{
+        font-family: 'Pacifico', cursive;
+        background-color: rgb(197, 7, 7);
+        color: burlywood;
+    
+ } 
+       
+
+/* footer */
+
+footer{
+    padding: 30px;
+    background: 
+radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.15) 30%, rgba(255,255,255,.3) 32%, rgba(255,255,255,0) 33%) 0 0,
+radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.3) 13%, rgba(255,255,255,0) 14%) 0 0,
+radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 17%, rgba(255,255,255,.43) 19%, rgba(255,255,255,0) 20%) 0 110px,
+radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) -130px -170px,
+radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) 130px 370px,
+radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.2) 13%, rgba(255,255,255,0) 14%) 0 0,
+linear-gradient(45deg, #343702 0%, #184500 20%, #187546 30%, #006782 40%, #0b1284 50%, #760ea1 60%, #83096e 70%, #840b2a 80%, #b13e12 90%, #e27412 100%);
+background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px, 530px 530px, 730px 730px, 100% 100%;
+background-color: #840b2a;
+    color: rgb(255, 255, 255);
+    display: flex;
+     justify-content: space-between; 
+    flex-wrap: wrap;  
+    position: relative;
+     
+}
+footer p{
+    font-size: 18px;
+    padding: 5px;
+    
+} 
+footer ul li a{
+    
+    color: white;
+}
+
+
+.izdo{
+    padding: 15px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.centro{
+   font-size: 20px; 
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.dcho{
+    padding: 15px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    display: flex;
+     justify-content: flex-end;
+    align-items: center ;
+  
+}
+.dcho a{
+    color: white;
+    font-size: 32px;
+    padding: 25px;
+}        
+
+.copy{
+    padding: 5px;
+    width: 100%
+}
+.copy p{
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+/* Media Queries*/
+@media (min-width:1280px){
+    .hero{
+        background-attachment: fixed;
+    } 
+}
+
+
+@media(max-width:720px){
+    .burger{
+        display: initial;}
+       
+nav{
+    display: none;
+}
+
+.fila{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.col3{
+    margin: 10px;
+
+}
+
+  
+.separador{
+        display: initial;
+        
+    }
+
+ .columna{
+        margin: 20px; }
+
+  .dcho{
+            justify-content: center;
+        }
+     
+}
+
+@media(max-width:640px){
+
+.burger{
+    display: initial;}
+
+
+.hero{
+    background-attachment: scroll;
+}    
+
+.hero h1{
+    font-size: 36px;
+    text-align: center;
+    padding: 0 10px;}
+
+.hero h2{
+    font-size: 24px;
+    text-align: center;
+    padding: 0 10px;}
+
+
+.izdo, .center, .dcho{
+        flex-basis: 200px;
+    }
+
+.eslogan{
+    margin:30px;}
+
+.columna{
+        margin: 20px;}
+.miniform{
+            text-align: center;
+        }
+   }
+
+@media(max-width:420px){
+ 
+.burger{
+    display: initial;}
+
+nav {
+        display: none;
+    }
+    
+    
+.fila{
+        margin: 20px 0 20px 0;
+        }
+
+.fila.primera{
+    margin: 100px 0 20px 0;
+}
+.miniform input{
+         font-size:20px;
+        padding: 10px;}
+         
+.miniform .boton{  
+         font-size: 20px;
+        padding: 10px;}
+.ultima{
+             margin:  20px 0 40px 0;
+         }       
+             
+.izdo{
+            margin-top: 20px;
+            display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+        
+        }
+       
+} 
